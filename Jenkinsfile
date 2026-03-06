@@ -28,11 +28,5 @@ pipeline {
                cleanWs()
             }
         }
-         stage('Check Workspace'){
-            steps{
-                fileExists '/var/lib/jenkins/workspace/Maven_Project1'
-                echo 'workspace deleted successfully'
-            }
-        }
     }
 }
