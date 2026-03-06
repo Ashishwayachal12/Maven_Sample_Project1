@@ -20,7 +20,9 @@ pipeline {
         }
         stage('Run Jar'){
             steps{
-                 sh 'java -jar target/*.jar'
+                sh ''' 
+                    mv target/*.jar app.jar
+                     java -jar app.jar'''
             }
         }
          stage('Clean Workspace'){
