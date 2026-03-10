@@ -1,5 +1,5 @@
 pipeline {
-    agent { label "zero" }
+    agent { label "kali" }
 
     stages {
         stage('Check out') {
