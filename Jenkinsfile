@@ -25,10 +25,10 @@ pipeline {
                      java -jar app.jar'''
             }
         }
-        //  stage('Clean Workspace'){
-        //     steps{
-        //        cleanWs()
-        //     }
-        // }
+         stage('Clean Workspace'){
+            steps{
+               cleanWs()
+            }
+        }
     }
 }
