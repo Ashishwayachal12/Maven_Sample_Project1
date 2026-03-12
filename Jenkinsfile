@@ -29,6 +29,9 @@ pipeline {
             steps{
                cleanWs()
             }
+             steps{
+               echo "bye"
+            }
         }
     }
 }
